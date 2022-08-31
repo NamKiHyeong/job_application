@@ -89,16 +89,17 @@
 			}
 			.firstTr {
 				border: 1px solid black;
-				background-color: #a5b1c2;
+				background-color: #BDBDBD;
 			}
 			.fistTd {
 				border: 1px solid black;
-				background-color: #a5b1c2;
+				background-color: #BDBDBD;
 			}
 			.fistTd_1 {
+				border: 1px solid black;
 				writing-mode: vertical-rl;
 				text-orientation: upright;
-				background-color: #4b6584;
+				background-color: #8C8C8C;
 				width: 45px;
 				font-weight: bold;				
 			}
