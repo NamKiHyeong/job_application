@@ -8,7 +8,7 @@
 		<title>Insert title here</title>
 		<style type="text/css">
 			table {border: 1px solid black; border-collapse: collapse;}
-			tr, td {border: 1px solid black;}
+   			tr {border: 1px solid black;}   
 			td {
 				height: 35px; 
 				text-align: center;
@@ -88,17 +88,25 @@
 				width: 440px;
 			}
 			.firstTr {
-				background-color: #bdc3c7;
+				border: 1px solid black;
+				background-color: #a5b1c2;
 			}
 			.fistTd {
-				background-color: #ecf0f1;
+				border: 1px solid black;
+				background-color: #a5b1c2;
 			}
 			.fistTd_1 {
 				writing-mode: vertical-rl;
 				text-orientation: upright;
-				background-color: #7f8c8d;
+				background-color: #4b6584;
 				width: 45px;
 				font-weight: bold;				
+			}
+			.dashedTd {
+				border-left: 1px dashed black;
+			}
+			.MultiTd{
+				border: 1px solid black;
 			}
 		</style>
 	</head>
@@ -109,38 +117,39 @@
 					<h1 id="title">입 사 지 원 서</h1>
 					<table id="table1">
 						<tr class="firstTr">
-							<td>구분</td><td>지원 분야</td><td>희망연봉</td>
+							<td class="MultiTd">구분</td><td class="MultiTd">지원 분야</td><td class="MultiTd">희망연봉</td>
 						</tr>
 						<tr>
-							<td>내용</td><td></td><td></td>
+							<td class="MultiTd">내용</td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 					</table>
 			</div>
 			
 			<div id="div2">
-				<div id="img"><img id="img1" alt="이미지 사진" src="./IMG_9347.png"></div>
+				<div id="img"><img id="img1" src="./IMG_9347.png">
+				</div>
 				<table id="table2">
 					<tr>
-						<td class="fistTd">성 명</td><td colspan="3" style="opacity: 0.5;">(한문)</td>
+						<td class="fistTd">성 명</td><td class="MultiTd" colspan="3" style="opacity: 0.5;">(한문)</td>
 					</tr>
 					<tr>
 						<td class="fistTd">주민번호</td><td></td>  
 						<td class="fistTd">생년월일</td><td>년&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;일&nbsp;</td>
 					</tr>
 					<tr>
-						<td class="fistTd">주   소</td><td colspan="3"></td>
+						<td class="fistTd">주   소</td><td class="MultiTd"colspan="3"></td>
 					</tr>
 					<tr>
-						<td class="fistTd">전화번호</td><td></td>
-						<td class="fistTd">E-MAIL</td><td></td>
+						<td class="fistTd">전화번호</td><td class="MultiTd"></td>
+						<td class="fistTd">E-MAIL</td><td class="MultiTd"></td>
 					</tr>
 					<tr>
-						<td class="fistTd">핸 드 폰</td><td></td>
+						<td class="fistTd">핸 드 폰</td><td class="MultiTd"></td>
 						<td class="fistTd">결혼유무</td><td style="opacity: 0.5;">미혼/기혼</td>
 					</tr>
 					<tr>			
-						<td class="fistTd">가족사항</td><td style="opacity: 0.5;">남&nbsp;&nbsp;녀&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;중</td>
-						<td class="fistTd">주거사항</td><td style="opacity: 0.5;">동거/비 동거</td>
+						<td class="fistTd">가족사항</td><td class="MultiTd" style="opacity: 0.5;">남&nbsp;&nbsp;녀&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;중</td>
+						<td class="fistTd">주거사항</td><td class="MultiTd" style="opacity: 0.5;">동거/비 동거</td>
 					</tr>
 				</table>
 			</div>
@@ -149,20 +158,20 @@
 				<table id="table3">
 					<tr class="firstTr">
 						<td class="fistTd_1" rowspan="4">학년</td>
-						<td colspan="2">입학년월</td><td colspan="2">졸업년월</td>
-						<td>학 교 명</td><td>전 공</td><td>졸 업 구 분</td><td>소재지</td>
+						<td class="MultiTd" colspan="2">입학년월</td><td class="MultiTd" colspan="2">졸업년월</td>
+						<td class="MultiTd">학 교 명</td><td class="MultiTd">전 공</td><td class="MultiTd">졸 업 구 분</td><td class="MultiTd">소재지</td>
 					</tr>
 					<tr>
-						<td></td><td></td><td></td><td></td>
-						<td></td><td></td><td style="opacity: 0.4;">졸업/재학</td><td></td>
+						<td style="padding-right: 7px;"></td><td class="dashedTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
+						<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd" style="opacity: 0.4;">졸업/재학</td><td class="MultiTd"></td>
 					</tr>
 					<tr>
-						<td></td><td></td><td></td><td></td>
-						<td></td><td></td><td style="opacity: 0.4;">졸업/재학/휴학</td><td></td>
+						<td></td><td class="dashedTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
+						<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd" style="opacity: 0.4;">졸업/재학/휴학</td><td class="MultiTd"></td>
 					</tr>
 					<tr>
-						<td></td><td></td><td></td><td></td>
-						<td></td><td></td><td style="opacity: 0.4;">졸업/재학/휴학</td><td></td>
+						<td></td><td class="dashedTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
+						<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd" style="opacity: 0.4;">졸업/재학/휴학</td><td class="MultiTd"></td>
 					</tr>
 				</table>
 			</div>
@@ -170,17 +179,17 @@
 			<div id="div4">
 				<table id="table4">
 					<tr class="firstTr">
-						<td class="fistTd_1" rowspan="4">경력</td><td>근 무 기 간</td>
-						<td>직 장 명</td><td>직 위</td><td>담 당 업 무</td><td>비 고</td>
+						<td class="fistTd_1" rowspan="4">경력</td><td class="MultiTd">근 무 기 간</td>
+						<td class="MultiTd">직 장 명</td><td class="MultiTd">직 위</td><td class="MultiTd">담 당 업 무</td><td class="MultiTd">비 고</td>
 					</tr>
 					<tr>
-						<td>~</td><td></td><td></td><td></td><td></td>
+						<td class="MultiTd">~</td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 					</tr>
 					<tr>
-						<td>~</td><td></td><td></td><td></td><td></td>
+						<td class="MultiTd">~</td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 					</tr>
 					<tr>
-						<td>~</td><td></td><td></td><td></td><td></td>
+						<td class="MultiTd">~</td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 					</tr>
 				</table>
 			</div>
@@ -189,15 +198,17 @@
 				<div id="div5_1">
 					<table id="table5">
 						<tr class="firstTr">
-							<td class="fistTd_1" rowspan="3">신체</td><td>신장</td>
-							<td>체중</td><td>시력</td><td>혈액형</td>
+							<td class="fistTd_1" rowspan="3">신체</td><td class="MultiTd">신장</td>
+							<td class="MultiTd">체중</td><td class="MultiTd">시력</td><td class="MultiTd">혈액형</td>
 						</tr>
 						<tr>
-							<td rowspan="2" style="text-align: right;">cm&nbsp;&nbsp;</td><td rowspan="2" style="text-align: right;">kg&nbsp;&nbsp;</td>
-							<td style="text-align: left;">좌:</td><td rowspan="2" style="text-align: right;">형&nbsp;</td>
+							<td class="MultiTd" rowspan="2" style="text-align: right;">cm&nbsp;&nbsp;</td>
+							<td class="MultiTd" rowspan="2" style="text-align: right;">kg&nbsp;&nbsp;</td>
+							<td class="MultiTd" style="text-align: left;">좌:</td>
+							<td class="MultiTd" rowspan="2" style="text-align: right;">형&nbsp;</td>
 						</tr>
 						<tr>
-							<td style="text-align: left;">우:</td>
+							<td class="MultiTd" style="text-align: left;">우:</td>
 						</tr>
 					</table>
 				</div>
@@ -205,15 +216,15 @@
 					<table id="table6">
 						<tr class="firstTr">
 							<td class="fistTd_1" rowspan="3">병역</td>
-							<td>구분</td>
-							<td>병과</td>
-							<td>계급</td><td>소속부대</td>
+							<td class="MultiTd">구분</td>
+							<td class="MultiTd">병과</td>
+							<td class="MultiTd">계급</td><td>소속부대</td>
 						</tr>
 						<tr>
-							<td>필 / 면제</td><td></td><td></td><td></td>
+							<td class="MultiTd">필 / 면제</td><td></td><td></td><td></td>
 						</tr>
 						<tr>
-							<td>복무기간</td><td colspan="3">년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월 ~ 년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월</td>
+							<td class="MultiTd">복무기간</td><td colspan="3">년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월 ~ 년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월</td>
 						</tr>
 					</table>
 				</div>
@@ -224,24 +235,29 @@
 					<table id="table7">
 						<tr class="firstTr">
 							<td class="fistTd_1" rowspan="6">가족사항</td>
-							<td>관계</td>
-							<td>성명</td><td>연령</td><td>근무처</td>
-							<td>직위</td><td>동거</td>
+							<td class="MultiTd">관계</td>
+							<td class="MultiTd">성명</td><td class="MultiTd">연령</td><td class="MultiTd">근무처</td>
+							<td class="MultiTd">직위</td><td class="MultiTd">동거</td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td><td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td><td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td><td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td><td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td><td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 					</table>
 				</div>
@@ -249,23 +265,23 @@
 					<table id="table8">
 						<tr class="firstTr">
 							<td class="fistTd_1" rowspan="6">외국어</td>
-							<td>언어</td>
-							<td>능력</td>
+							<td class="MultiTd">언어</td>
+							<td class="MultiTd">능력</td>
 						</tr>
 						<tr>
-							<td>영어</td><td style="opacity: 0.4;">상 중 하</td>
+							<td class="MultiTd">영어</td><td class="MultiTd" style="opacity: 0.4;">상 중 하</td>
 						</tr>
 						<tr>
-							<td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td>공인시험</td><td style="opacity: 0.4;">점수</td>
+							<td class="MultiTd">공인시험</td><td class="MultiTd" style="opacity: 0.4;">점수</td>
 						</tr>
 						<tr>
-							<td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td></td><td></td>
+							<td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 					</table>
 				</div>
@@ -276,17 +292,17 @@
 					<table id="table9">
 						<tr>
 							<td class="fistTd_1" rowspan="4">OA능력</td>
-							<td>워드 (한글/MS워드)</td>
-							<td style="opacity: 0.4;">상 중 하</td>
+							<td class="MultiTd">워드 (한글/MS워드)</td>
+							<td class="MultiTd" style="opacity: 0.4;">상 중 하</td>
 						</tr>
 						<tr>
-							<td>프레젠테이션 (파워포인트)</td><td style="opacity: 0.4;">상 중 하</td>
+							<td class="MultiTd">프레젠테이션 (파워포인트)</td><td class="MultiTd" style="opacity: 0.4;">상 중 하</td>
 						</tr>
 						<tr>
-							<td>스프레드시트 (엑셀)</td><td style="opacity: 0.4;">상 중 하</td>
+							<td class="MultiTd">스프레드시트 (엑셀)</td><td class="MultiTd" style="opacity: 0.4;">상 중 하</td>
 						</tr>
 						<tr>
-							<td>인터넷활용</td><td style="opacity: 0.4;">상 중 하</td>
+							<td class="MultiTd">인터넷활용</td><td class="MultiTd" style="opacity: 0.4;">상 중 하</td>
 						</tr>
 					</table>
 				</div>
@@ -294,17 +310,17 @@
 					<table id="table10">
 						<tr class="firstTr">
 							<td class="fistTd_1" rowspan="4">자격사항</td>
-							<td>취득일자</td>
-							<td>종	류</td><td>등급</td>
+							<td class="MultiTd">취득일자</td>
+							<td class="MultiTd">종	류</td><td>등급</td>
 						</tr>
 						<tr>
-							<td>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td><td></td><td></td>
+							<td class="MultiTd">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td><td></td><td></td>
+							<td class="MultiTd">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 						<tr>
-							<td>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td><td></td><td></td>
+							<td class="MultiTd">.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.</td><td class="MultiTd"></td><td class="MultiTd"></td>
 						</tr>
 					</table>
 				</div>
